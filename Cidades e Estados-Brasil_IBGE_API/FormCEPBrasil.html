@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cidades e Estados do Brasil</title>
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+    </head>
+
+    <body>
+        <script src="FormCEPBrasil.js" defer></script>
+        <main>
+            <form id="citynstate">
+                
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" onchange="createCities(this)">
+                    <option disabled selected value> -- Seu Estado -- </option>
+                </select>
+
+                <label for="cidade">Cidade</label>
+                <select id="cidade" name="cidade">
+                    <option disabled selected value> -- Sua Cidade -- </option>
+                </select>
+
+            </form>
+        </main>
+    </body>
+
+    </html>
